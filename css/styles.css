@@ -63,17 +63,17 @@ section{
 
 article{
     flex: 1;
-    background-color: rgba(253, 218, 180,.5);
+    background-color: rgba(253, 218, 180,.2);
     border-radius: 20px;
     margin: 1rem;
     padding: 1rem;
     position: relative;
     overflow: hidden;
     text-shadow: 0px 0px 20px black;
+    color: beige;
 }
 
 .video-art{
-    color: beige;
     background-color: rgba(255, 255, 255,0);
 }
 
@@ -92,8 +92,22 @@ article:hover{
     z-index: -1;
 }
 
-article:hover .video-bg{
-    filter: blur(5px);
+article:hover .video-bg {
+    filter: blur(2px);
+}
+
+article img{
+    position: absolute;
+    top:0;
+    left:0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    
+}
+
+article:hover img{
+    filter: blur(2px);
 }
 
 /*@media(min-aspect-ratio:16/9) {
